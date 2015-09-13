@@ -13,7 +13,6 @@ PowerData$DateTimeValue<-strptime(PowerData$DateTimeText, format="%d/%m/%Y-%H:%M
 
 
 
-
 ## create the png file of the right name and size
 png("./plot2.png", width=480, height=480)
 ## plot the line chart
@@ -21,6 +20,3 @@ plot(PowerData$DateTimeValue,PowerData$Global_active_power, ylab="Global Active 
 ## put the lines on rather than showing open circles for points
 lines(PowerData$DateTimeValue,PowerData$Global_active_power, type="l")
 dev.off()
-
-
-

@@ -17,8 +17,5 @@ PowerData$DateTimeValue<-strptime(PowerData$DateTimeText, format="%d/%m/%Y-%H:%M
 png("./plot1.png", width=480, height=480)
 
 ## plot the histogram with the correct annotations
-hist(PowerData$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)", xlim=c(0,6), xaxt="n")
-## create the custom x axis
-axis(1,at=seq(0,6, by=2))
+hist(PowerData$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()
-

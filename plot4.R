@@ -13,9 +13,6 @@ PowerData$DateTimeValue<-strptime(PowerData$DateTimeText, format="%d/%m/%Y-%H:%M
 
 
 
-
-
-
 ## create the png file of the right name and size
 png("./plot4.png", width=480, height=480)
 ## set the canvass so we can fit four charts on it
@@ -51,5 +48,4 @@ axis(2,at=seq(0,0.5, by=0.1))
 lines(PowerData$DateTimeValue,PowerData$Global_reactive_power, type="l")
 
 dev.off()
-
 
